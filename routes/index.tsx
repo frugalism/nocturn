@@ -45,23 +45,33 @@ export default function Home() {
 				</nav>
 			</header>
 			<article>
-				<div class="page max-w-screen-xl flex justify-center items-center mx-auto">
+				<div class="warning hidden">
+					<div class="max-w-screen-xl mx-auto p-4">
+						<div class="flex flex-col gap-0 justify-center items-center">
+							<h1 class="text-md text-center">
+								Your screen is not wide enough!
+							</h1>
+							<p class="text-sm text-center">Try using a different device.</p>
+						</div>
+					</div>
+				</div>
+				<div class="page max-w-screen-xl hidden sm:flex justify-center items-center mx-auto">
 					<div class="grid grid-cols-2 grid-rows-2 gap-16">
 						<Tile
 							title="Windy Island"
-							image="/thumbnails/WindyIsland.png"
+							image="/thumbnails/windy.png"
 						/>
 						<Tile
 							title="Fissure Outpost"
-							image="/thumbnails/WindyIsland.png"
+							image="/thumbnails/outpost.png"
 						/>
 						<Tile
 							title="Graveyard Sea"
-							image="/thumbnails/WindyIsland.png"
+							image="/thumbnails/graveyard.png"
 						/>
 						<Tile
 							title="Ten-Mou"
-							image="/thumbnails/WindyIsland.png"
+							image="/thumbnails/ten-mou.png"
 						/>
 					</div>
 				</div>

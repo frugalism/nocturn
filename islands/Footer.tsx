@@ -48,7 +48,7 @@ export default function Footer() {
 	return (
 		<>
 			<footer class="flex flex-row gap-4 justify-center items-center p-12">
-				<nav class="flex flex-col gap-4 justify-center items-end max-h-16 ml-auto">
+				<nav class="hidden sm:flex flex-col gap-4 justify-center items-end max-h-16 ml-auto">
 					<div>
 						<h2 class="text-2xl">Database</h2>
 
@@ -97,16 +97,26 @@ export default function Footer() {
 					/>
 				</a>
 
-				<div>
+				<div class="hidden sm:block">
 					<nav class="flex flex-row gap-4 text-2xl justify-start items-center">
 						<ul class="flex flex-col gap-2">
 							<li class="flex flex-row gap-2 justify-start items-center">
 								<FaDiscord />
-								<a href="https://discord.gg/8QZ2BZs">Discord</a>
+								<a
+									class="shrink-footer text-sm"
+									href="https://discord.gg/FERfyDvVjp"
+								>
+									Ten-Mou Illuminati
+								</a>
 							</li>
 							<li class="flex flex-row gap-2 justify-start items-center">
 								<FaGithub />
-								<a href="https://github.com/synt7x/nocturn-database">GitHub</a>
+								<a
+									class="shrink-footer text-sm"
+									href="https://github.com/frugalism/nocturn"
+								>
+									Nocturn GitHub
+								</a>
 							</li>
 						</ul>
 					</nav>
